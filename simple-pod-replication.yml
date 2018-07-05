@@ -4,14 +4,16 @@ metadata:
   name: simple-rc
 spec:
   replicas: 2
-
+  selector:
+    app:nginx
  template:
     metadata:
       labels:
         app: nginx
+        ver:1.0
     spec:
       containers:
-      - name: hello-pod
+      - name: simple-pod
         image: nginx
         ports:
         - containerPort: 80
