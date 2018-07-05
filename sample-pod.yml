@@ -7,4 +7,4 @@ metadata :
    - name: nginx
      image: nginx
      ports:
-     - Containerport: 80  
+     - containerPort: 80  
