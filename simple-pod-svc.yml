@@ -1,0 +1,13 @@
+apiversion: api
+kind: Service
+metadata:
+name: simple-svc
+spec:
+selector:
+app: nginx
+type: Nodeport
+ports:
+-name: http
+port: 80
+nodePort: 30001
+protocol: TCP
